@@ -61,16 +61,16 @@
         }
 
         :root {
-            --primary-color: #007bff;
+            --primary-color: #0056b3;
             /* Blue */
-            --secondary-color: #0056b3;
+            --secondary-color: #004494;
             /* Darker Blue */
-            --accent-color: #ffc107;
+            --accent-color: #ffab00;
             /* Yellow */
             --danger-color: #dc3545;
             /* Red */
-            --text-dark: #1a1a1a;
-            --text-medium: #555555;
+            --text-dark: #212529;
+            --text-medium: #495057;
             --text-light: #f8f9fa;
             --bg-light: #f0f2f5;
             --bg-white: #ffffff;
@@ -78,11 +78,11 @@
             --border-light: #e9ecef;
             --font-family-base: 'Roboto', Arial, sans-serif;
             --font-family-heading: 'Poppins', sans-serif;
-            --border-radius-sm: 8px;
-            --border-radius-md: 16px;
-            --shadow-sm: 0 2px 4px rgba(0,0,0,0.05);
-            --shadow-md: 0 6px 12px rgba(0,0,0,0.1);
-            --shadow-lg: 0 15px 30px rgba(0,0,0,0.15);
+            --border-radius-sm: 12px;
+            --border-radius-md: 24px;
+            --shadow-sm: 0 2px 8px rgba(0,0,0,0.05);
+            --shadow-md: 0 8px 24px rgba(0,0,0,0.08);
+            --shadow-lg: 0 16px 48px rgba(0,0,0,0.12);
         }
 
         html,
@@ -155,7 +155,7 @@
         .nav-branding {
             font-size: 1.5rem;
             font-weight: 700;
-            color: #2c3e50;
+            color: var(--primary-color);
             text-decoration: none;
         }
 
@@ -172,7 +172,7 @@
 
         .nav-link {
             text-decoration: none;
-            color: #34495e;
+            color: var(--text-dark);
             font-weight: 500;
             transition: color 0.3s ease-in-out;
             padding: 0.5rem 0;
@@ -181,7 +181,7 @@
         }
 
         .nav-link:hover {
-            color: #3498db;
+            color: var(--primary-color);
         }
 
         .nav-link::after {
@@ -191,7 +191,7 @@
             height: 2px;
             bottom: 0;
             left: 0;
-            background-color: var(--secondary-color);
+            background-color: var(--primary-color);
             transition: width 0.3s ease;
         }
 
@@ -272,7 +272,7 @@
         }
 
         .hero {
-            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            background: linear-gradient(135deg, #003366 0%, #0056b3 100%);
             color: var(--text-light);
             padding: 140px 0 100px 0;
             position: relative;
@@ -352,13 +352,19 @@
             background: var(--bg-white);
             border-radius: var(--border-radius-sm);
             box-shadow: var(--shadow-sm);
-            margin-top: 30px;
-            margin-bottom: 30px;
-            padding: 40px 0;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            padding: 60px 0;
             /* Vertical padding */
-            border: none;
+            border: 1px solid rgba(0,0,0,0.03);
             overflow: visible;
             position: relative;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .section:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
         }
 
         /* Ensure content within sections aligns with the container */
@@ -370,7 +376,7 @@
         .section-title {
             font-size: 2.2rem;
             font-weight: 700;
-            color: #333;
+            color: var(--text-dark);
             margin-bottom: 30px;
             text-align: center;
             position: relative;
@@ -391,7 +397,7 @@
 
         .section p {
             color: var(--text-medium);
-            line-height: 1.7;
+            line-height: 1.8;
             margin-bottom: 1rem;
         }
 
@@ -413,7 +419,7 @@
 
         th,
         td {
-            padding: 1.2rem 1.5rem;
+            padding: 1.4rem 1.8rem;
             border: none;
             border-bottom: 1px solid var(--border-light);
             text-align: left;
@@ -422,10 +428,10 @@
 
         th {
             background: #f8f9fa;
-            color: #333;
+            color: var(--text-dark);
             font-weight: 600;
             text-transform: uppercase;
-            font-size: 0.85rem;
+            font-size: 0.8rem;
             letter-spacing: 0.5px;
             border-bottom: 2px solid var(--border-light);
         }
@@ -544,7 +550,7 @@
         }
 
         footer {
-            background: #1a1a1a;
+            background: #212529;
             color: var(--text-light);
             padding: 40px 0;
             font-size: 0.98rem;

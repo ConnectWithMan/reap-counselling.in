@@ -1,5 +1,6 @@
 
 
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -261,18 +262,20 @@
             letter-spacing: -1px;
         }
 
-        .hero-text h2 {
+        .hero-text .hero-subtitle {
             font-size: 1.6rem;
             font-weight: 400;
             margin-bottom: 1.5rem;
             color: #e0e0e0;
+            margin-top: 0;
         }
 
-        .hero-text h4 {
+        .hero-text .hero-description {
             font-size: 1.2rem;
             font-weight: 400;
             margin-bottom: 2rem;
             color: var(--text-light);
+            margin-top: 0;
         }
 
         .hero-badge {
@@ -497,7 +500,7 @@
                 font-size: 2.8rem;
             }
 
-            .hero-text h2 {
+            .hero-text .hero-subtitle {
                 font-size: 1.4rem;
             }
 
@@ -560,7 +563,7 @@
                 font-size: 2.4rem;
             }
 
-            .hero-text h2 {
+            .hero-text .hero-subtitle {
                 font-size: 1.3rem;
             }
 
@@ -607,7 +610,7 @@
                 font-size: 2rem;
             }
 
-            .hero-text h2 {
+            .hero-text .hero-subtitle {
                 font-size: 1.2rem;
             }
 
@@ -659,30 +662,44 @@
     </header>
 
 
+    <main>
+
     <!-- HERO SECTION -->
     <section class="hero">
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
-                    <h1>About Us</h1>
-                    <h2>Guiding Students Through the Rajasthan Engineering Admission Process</h2>
-                    <h4>Your trusted partner for B.E./B.Tech & B.Arch admissions.</h4>
+                    <h1>About REAP Counselling Portal</h1>
+                    <p class="hero-subtitle">Guiding Students Through the Rajasthan Engineering Admission Process</p>
+                    <p class="hero-description">Your trusted partner for B.E./B.Tech & B.Arch admissions in top Rajasthan colleges.</p>
                     <div class="hero-badge">
                         Expert Guidance for Your Engineering Future
                     </div>
                 </div>
                 <div class="hero-img">
-                    <img src="https://placehold.co/400x300/007bff/fff?text=About+Us" alt="About REAP Counselling"
+                    <img src="https://placehold.co/400x300/007bff/fff?text=About+Us" alt="Students receiving REAP counselling guidance"
                         onerror="this.onerror=null;this.src='https://placehold.co/400x300/007bff/fff?text=About+Us';">
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- WHAT IS REAP SECTION -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">What is REAP Counselling?</h2>
+            <p>
+                The <strong>Rajasthan Engineering Admission Process (REAP)</strong> is the centralized counselling process for admissions into B.E., B.Tech, and B.Arch programs across government and private engineering colleges in Rajasthan. Instead of a separate entrance exam, REAP allocates seats based on JEE Main scores or Class 12th board merit. Our information portal provides you with the latest updates, cut-offs, tools, and personalized advice to make informed decisions.
+            </p>
+        </div>
+    </section>
+
+    </main>
+
     <!-- OUR MISSION SECTION -->
     <section class="section">
         <div class="container">
-            <div class="section-title">Our Mission</div>
+            <h2 class="section-title">Our Mission</h2>
             <p>
                 Our mission is to simplify the complex journey of engineering admissions in Rajasthan. We are dedicated
                 to
@@ -695,25 +712,24 @@
         </div>
     </section>
 
-    <!-- MEET OUR COUNSELLOR SECTION -->
+    <!-- OUR SERVICES SECTION -->
     <section class="section">
         <div class="container">
-            <div class="section-title">Meet Our Counsellor</div>
-            <h3 class="subsection-title-blue" style="text-align: center; margin-top: 0;">Manish Meena</h3>
-            <p style="text-align: center; max-width: 800px; margin-left: auto; margin-right: auto;">
-                With years of experience in the educational sector, Manish Meena has established himself as a trusted
-                independent admission counsellor. His deep understanding of the REAP process, combined with a genuine
-                passion for helping students, has enabled hundreds of aspiring engineers to find their path. Manish is
-                committed to providing ethical, transparent, and effective counselling to ensure students and their
-                families feel supported every step of the way.
-            </p>
+            <h2 class="section-title">Our Information Portal Features</h2>
+            <h3 class="subsection-title-blue">REAP Rank & College Predictor</h3>
+            <p>Utilize our advanced algorithms based on previous years' cut-offs to estimate your REAP rank and predict which top Rajasthan engineering colleges you are likely to get.</p>
+            <h3 class="subsection-title-blue">Choice Filling Assistance</h3>
+            <p>We provide a curated list of college preferences tailored to your rank to maximize your chances of getting the best possible seat in branches like CSE, IT, ECE, and more.</p>
+            <h3 class="subsection-title-blue">Latest Updates & Notifications</h3>
+            <p>Stay ahead with real-time alerts on important REAP dates, application form releases, merit list publications, and seat allotment results.</p>
         </div>
     </section>
+
 
     <!-- WHY CHOOSE US SECTION -->
     <section class="section">
         <div class="container">
-            <div class="section-title">Why Choose Us?</div>
+            <h2 class="section-title">Why Choose Us?</h2>
             <h3 class="subsection-title-purple">Personalized Guidance</h3>
             <ul>
                 <li>We provide one-on-one counselling sessions to understand your unique academic profile, interests,
@@ -739,9 +755,7 @@
     <!-- FOOTER -->
     <footer>
         &copy;
-        <script>document.write(new Date().getFullYear());</script> Disclaimer – Data is used responsibly for admission counselling purposes
-        only. This form is for student counselling purposes only and shouldn't be considered for auto registration to
-        any college.
+        <script>document.write(new Date().getFullYear());</script> REAP Counselling. All rights reserved.
     </footer>
 
     <script>
